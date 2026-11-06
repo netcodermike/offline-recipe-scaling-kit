@@ -1,0 +1,21 @@
+{
+  "title": "Coastal vegetable soup",
+  "servings": 4,
+  "ingredients": [
+    {
+      "name": "Vegetable stock",
+      "quantity": 1.5,
+      "unit": "litre"
+    },
+    {
+      "name": "Carrots",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "name": "Lentils",
+      "quantity": 180,
+      "unit": "g"
+    }
+  ]
+}

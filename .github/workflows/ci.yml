@@ -1,0 +1,14 @@
+name: Validate application
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate domain behavior
+        run: |
+          swiftc main.swift -o recipe-kit
+          ./recipe-kit --self-test
